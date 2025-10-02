@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Kiểm Tra Số Dương, Số Âm , hoặc số 0
+    </h1>
+    <label for="inputNumber">Nhập số nguyên: </label>
+    <input type="text" id="inputNumber" value = "0">
+    <button onclick = "checkNumber()">Kiểm Tra</button>
+    <p id ="result"></p>
+
+    <script>
+        function checkNumber(){
+            let number = Number(document.getElementById("inputNumber").value);
+        }
+    </script>
+</body>
+</html>
