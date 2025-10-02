@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 10: Chuyển đổi đơn vị nhiệt độ</title>
+</head>
+<body>
+  <script>
+    let value = Number(prompt("Nhập giá trị: "));
+    let unit = prompt("Nhập đơn vị (celsius/fahrenheit): ");
+    let result;
+    switch(unit) {
+      case "celsius":
+        if (value > -273) {
+          result = (value * 9/5) + 32 + " Fahrenheit";
+        } else {
+          result = "Giá trị không hợp lệ";
+        }
+        break;
+      case "fahrenheit":
+        result = ((value - 32) * 5/9) + " Celsius";
+        break;
+      default:
+        result = "Đơn vị không hợp lệ";
+    }
+    console.log(result);
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 9: Kiểm tra quyền truy cập</title>
+</head>
+<body>
+  <script>
+    let age = Number(prompt("Nhập tuổi: "));
+    let role = prompt("Nhập vai trò (admin/user/guest): ");
+    let access = (role === "admin" || (role === "user" && age >= 18)) ? "Được truy cập" : "Không được truy cập";
+    console.log(access);
+  </script>
+</body>
+</html>

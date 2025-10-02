@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Đơn Giản</title>
+</head>
+<body>
+    <script>
+        let number1 = Number(prompt("Nhập số nguyên thứ nhất: "));
+        let number2 = Number(prompt("Nhập số nguyên thứ hai: "));
+        let toanTu = prompt("Nhập toán tử: ");
+
+        switch(toanTu){
+            case "+":
+                console.log(`Tổng: ${number1 + number2}`);
+            case "-":
+                console.log(`Hiệu: ${number1 - number2}`);
+            case "*":
+                console.log(`Tích: ${number1 * number2}`);
+            case "/":
+                if(number2 !== 0){
+                    console.log(`Thương: ${number1 / number2}`);
+                }
+                else{
+                    console.log("--Lỗi--");
+                }
+        }
+    </script>
+</body>
+</html>
