@@ -8,9 +8,10 @@
 
   <script>
     let temp = Number(prompt("Nhập nhiệt độ: "));
-    let isRain = Boolean(prompt("Có mưa không? (true/false): ")) === true;
-    let activity = isRain ? "Ở nhà" : (temp > 25 ? "Đi chơi" : "Ở nhà");
+    let isRain = prompt("Có mưa không? (true/false): ").trim();
+    let activity = (isRain === "true") ? "Ở nhà" : (temp > 25 ? "Đi chơi" : "Ở nhà");
     console.log(activity);
+    console.log(isRain);
   </script>
 </body>
 </html>
